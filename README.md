@@ -54,6 +54,46 @@ The application uses Google's Gemini API to generate personalized interview ques
 
 ---
 
+## 🔄 Application Workflow
+
+User
+  │
+  ▼
+Login / Register
+  │
+  ▼
+Enter Job Description
+  │
+  ▼
+Enter Candidate Information
+  │
+  ▼
+Upload Resume
+  │
+  ▼
+React Frontend
+  │
+  ▼
+Express Backend
+  │
+  ▼
+Process Input Data
+  │
+  ▼
+Google Gemini API
+  │
+  ├── Technical Questions
+  ├── Behavioral Questions
+  ├── Skill Gap Analysis
+  ├── Interview Strategy
+  └── Preparation Roadmap
+  │
+  ▼
+Store Report in MongoDB
+  │
+  ▼
+Display Report in React
+
 ## 🏗️ System Architecture
 
 ```text
@@ -87,44 +127,6 @@ The application uses Google's Gemini API to generate personalized interview ques
                                                ▼
                                   Personalized Interview
                                        Preparation
+```text
 
 ---
-
-## 🔄 Application Workflow
-
-User
-  │
-  ▼
-Enter Job Description
-  │
-  ▼
-Enter Candidate Information
-  │
-  ▼
-Upload Resume
-  │
-  ▼
-React Frontend
-  │
-  ▼
-Express Backend
-  │
-  ▼
-Process Candidate Data
-  │
-  ▼
-Google Gemini API
-  │
-  ▼
-Generate Interview Strategy
-  │
-  ├── Technical Questions
-  ├── Behavioral Questions
-  ├── Skill Gap Analysis
-  └── Preparation Roadmap
-  │
-  ▼
-Store Report in MongoDB
-  │
-  ▼
-Display Report in React

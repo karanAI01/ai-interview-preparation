@@ -54,18 +54,6 @@ The application uses Google's Gemini API to generate personalized interview ques
 
 ---
 
-## How It Works
-
-1. User enters the job description.
-2. User provides their profile information and resume.
-3. Frontend sends the information to the backend.
-4. Backend processes the data.
-5. Google Gemini generates personalized interview content.
-6. The generated report is stored in MongoDB.
-7. The frontend displays the interview preparation report.
-
----
-
 ## 🏗️ System Architecture
 
 ```text
@@ -99,3 +87,42 @@ The application uses Google's Gemini API to generate personalized interview ques
                                                ▼
                                   Personalized Interview
                                        Preparation
+
+# Application Workflow
+
+User
+  │
+  ▼
+Enter Job Description
+  │
+  ▼
+Enter Candidate Information
+  │
+  ▼
+Upload Resume
+  │
+  ▼
+React Frontend
+  │
+  ▼
+Express Backend
+  │
+  ▼
+Process Candidate Data
+  │
+  ▼
+Google Gemini API
+  │
+  ▼
+Generate Interview Strategy
+  │
+  ├── Technical Questions
+  ├── Behavioral Questions
+  ├── Skill Gap Analysis
+  └── Preparation Roadmap
+  │
+  ▼
+Store Report in MongoDB
+  │
+  ▼
+Display Report in React

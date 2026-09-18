@@ -88,7 +88,7 @@ The application uses Google's Gemini API to generate personalized interview ques
                                   Personalized Interview
                                        Preparation
 
-# Application Workflow
+## 🔄 Application Workflow
 
 User
   │

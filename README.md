@@ -1,39 +1,58 @@
 # AI-Powered Interview Preparation & Career Assistant
 
-An AI-powered full-stack web application that helps candidates prepare for interviews by analyzing job descriptions and candidate profiles.
+An AI-powered full-stack web application that helps candidates prepare for technical and behavioral interviews by analyzing a job description, candidate profile, and resume.
 
-## Features
+The application uses Google's Gemini API to generate personalized interview questions, identify skill gaps, and create a customized interview preparation roadmap.
 
-- AI-generated technical interview questions
-- AI-generated behavioral questions
-- Personalized interview preparation strategy
-- Skill-gap analysis
-- Interview preparation roadmap
-- Resume processing
-- User authentication
-- Interview report generation
+---
 
-## Tech Stack
+## 🚀 Features
+
+- 📄 Job Description Analysis
+- 👤 Candidate Profile Analysis
+- 📑 Resume Processing
+- 🤖 AI-powered Interview Strategy
+- 💻 Technical Interview Questions
+- 🧠 Behavioral Interview Questions
+- 📊 Skill Gap Analysis
+- 🗺️ Personalized Preparation Roadmap
+- 🔐 JWT-based Authentication
+- 💾 MongoDB-based Report Storage
+- 📄 PDF Report Generation
+- ⚡ React-based User Interface
+
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
+
 - React.js
 - Vite
 - Axios
+- JavaScript
+- HTML
+- CSS
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
-- JWT
+- JWT Authentication
 
-### AI
+### Generative AI
+
 - Google Gemini API
 - Generative AI
 
-### Other
-- Puppeteer
+### Other Technologies
+
 - PDF Processing
+- Puppeteer
+
+---
 
 ## How It Works
 
@@ -45,9 +64,38 @@ An AI-powered full-stack web application that helps candidates prepare for inter
 6. The generated report is stored in MongoDB.
 7. The frontend displays the interview preparation report.
 
-## Project Structure
+---
+
+## 🏗️ System Architecture
 
 ```text
-Backend/
-Frontend/
-README.md
+                    ┌─────────────────────┐
+                    │       User          │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   React Frontend    │
+                    │      + Vite         │
+                    └──────────┬──────────┘
+                               │
+                         HTTP / Axios
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Node.js + Express │
+                    │      Backend        │
+                    └──────────┬──────────┘
+                               │
+                ┌──────────────┼──────────────┐
+                │              │              │
+                ▼              ▼              ▼
+          ┌──────────┐   ┌──────────┐   ┌──────────────┐
+          │   JWT    │   │ MongoDB  │   │ Gemini API   │
+          │   Auth   │   │ Database │   │  Generative  │
+          └──────────┘   └──────────┘   │      AI      │
+                                        └──────────────┘
+                                               │
+                                               ▼
+                                  Personalized Interview
+                                       Preparation

@@ -54,7 +54,46 @@ The application uses Google's Gemini API to generate personalized interview ques
 
 ---
 
+## 🏗️ System Architecture
+
+```text
+                    ┌─────────────────────┐
+                    │       User          │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   React Frontend    │
+                    │      + Vite         │
+                    └──────────┬──────────┘
+                               │
+                         HTTP / Axios
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Node.js + Express │
+                    │      Backend        │
+                    └──────────┬──────────┘
+                               │
+                ┌──────────────┼──────────────┐
+                │              │              │
+                ▼              ▼              ▼
+          ┌──────────┐   ┌──────────┐   ┌──────────────┐
+          │   JWT    │   │ MongoDB  │   │ Gemini API   │
+          │   Auth   │   │ Database │   │  Generative  │
+          └──────────┘   └──────────┘   │      AI      │
+                                        └──────────────┘
+                                               │
+                                               ▼
+                                  Personalized Interview
+                                       Preparation
+```
+
+---
+
 ## 🔄 Application Workflow
+
+```text
 
 User
   │
@@ -94,39 +133,159 @@ Store Report in MongoDB
   ▼
 Display Report in React
 
-## 🏗️ System Architecture
-
-```text
-                    ┌─────────────────────┐
-                    │       User          │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   React Frontend    │
-                    │      + Vite         │
-                    └──────────┬──────────┘
-                               │
-                         HTTP / Axios
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   Node.js + Express │
-                    │      Backend        │
-                    └──────────┬──────────┘
-                               │
-                ┌──────────────┼──────────────┐
-                │              │              │
-                ▼              ▼              ▼
-          ┌──────────┐   ┌──────────┐   ┌──────────────┐
-          │   JWT    │   │ MongoDB  │   │ Gemini API   │
-          │   Auth   │   │ Database │   │  Generative  │
-          └──────────┘   └──────────┘   │      AI      │
-                                        └──────────────┘
-                                               │
-                                               ▼
-                                  Personalized Interview
-                                       Preparation
-```text
+```
 
 ---
+
+## 🤖 Generative AI Integration
+
+This project uses Generative AI through the Google Gemini API.
+
+The backend sends relevant candidate information and job requirements to Gemini.
+
+```text
+Job Description
+       +
+Candidate Profile
+       +
+Resume Information
+       │
+       ▼
+   AI Prompt
+       │
+       ▼
+ Google Gemini
+       │
+       ▼
+Generated Interview Content
+
+```
+
+---
+
+## 🔌 API Communication
+
+The React frontend communicates with the Node.js backend using REST APIs.
+
+```text
+React Frontend
+      │
+      │ Axios / HTTP Request
+      ▼
+Express Routes
+      │
+      ▼
+Controllers
+      │
+      ▼
+Services
+      │
+      ▼
+Gemini API / MongoDB
+      │
+      ▼
+Backend Response
+      │
+      ▼
+React Frontend
+
+```
+
+---
+
+## 🔐 Authentication
+
+The application uses JWT (JSON Web Token) based authentication.
+
+```text
+User
+ │
+ ▼
+Login / Register
+ │
+ ▼
+Backend
+ │
+ ▼
+Validate Credentials
+ │
+ ▼
+Generate JWT
+ │
+ ▼
+Frontend
+ │
+ ▼
+Authenticated API Requests
+
+```
+
+---
+
+## 💾 Database
+
+The application uses MongoDB as the database.
+
+Mongoose is used as the ODM layer for interacting with MongoDB.
+
+The database can store:
+
+- User information
+- Interview reports
+- Generated interview content
+- Candidate information
+
+```text
+Node.js Backend
+      │
+      ▼
+   Mongoose
+      │
+      ▼
+    MongoDB
+```
+
+---
+
+## 📄 Resume Processing
+
+The application supports resume upload and processing.
+
+```text
+Resume File
+     │
+     ▼
+Backend Upload
+     │
+     ▼
+PDF Processing
+     │
+     ▼
+Extract Resume Information
+     │
+     ▼
+Combine With Candidate Data
+     │
+     ▼
+Gemini API
+```
+
+---
+
+# 🖥️ Screenshots
+
+## Home Page
+
+![Home Page]()
+
+## Interview Strategy
+
+![Interview Strategy]()
+
+## Technical Questions
+
+![Technical Questions]()
+
+## Skill Gap Analysis
+
+![Skill Gap Analysis]()

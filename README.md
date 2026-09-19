@@ -286,6 +286,14 @@ Gemini API
 
 ![Technical Questions]()
 
+## Technical Questions
+
+![Technical Questions]()
+
+## Technical Questions
+
+![Technical Questions]()
+
 ## Skill Gap Analysis
 
 ![Skill Gap Analysis]()

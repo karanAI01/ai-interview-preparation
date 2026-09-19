@@ -274,7 +274,7 @@ Gemini API
 
 # 🖥️ Screenshots
 
-## Home Page
+## Login Page
 
 ![Login Page](https://github.com/karanAI01/ai-interview-preparation/blob/main/screenshots/Login%20.png)
 
@@ -288,12 +288,8 @@ Gemini API
 
 ## Behavioral Questions
 
-![Technical Questions](https://github.com/karanAI01/ai-interview-preparation/blob/main/screenshots/Behavioral%20questions%20.png)
+![Behavioral Questions](https://github.com/karanAI01/ai-interview-preparation/blob/main/screenshots/Behavioral%20questions%20.png)
 
-## Technical Questions
+## Roadmap
 
-![Technical Questions]()
-
-## Skill Gap Analysis
-
-![Skill Gap Analysis]()
+![Roadmap](https://github.com/karanAI01/ai-interview-preparation/blob/main/screenshots/Roadmap%20.png)

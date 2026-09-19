@@ -276,7 +276,7 @@ Gemini API
 
 ## Home Page
 
-![Home Page]()
+![Login Page](https://github.com/karanAI01/ai-interview-preparation/blob/main/screenshots/Login%20.png)
 
 ## Interview Strategy
 

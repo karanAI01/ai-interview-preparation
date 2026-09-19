@@ -280,7 +280,7 @@ Gemini API
 
 ## Interview Strategy
 
-![Interview Strategy]()
+![Interview Strategy](https://github.com/karanAI01/ai-interview-preparation/blob/main/screenshots/interview%20plan%20.png)
 
 ## Technical Questions
 

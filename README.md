@@ -286,9 +286,9 @@ Gemini API
 
 ![Technical Questions](https://github.com/karanAI01/ai-interview-preparation/blob/main/screenshots/Technical%20questions%20.png)
 
-## Technical Questions
+## Behavioral Questions
 
-![Technical Questions]()
+![Technical Questions](https://github.com/karanAI01/ai-interview-preparation/blob/main/screenshots/Behavioral%20questions%20.png)
 
 ## Technical Questions
 

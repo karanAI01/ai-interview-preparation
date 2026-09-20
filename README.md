@@ -2,7 +2,7 @@
 
 An AI-powered full-stack web application that helps candidates prepare for technical and behavioral interviews by analyzing a job description, candidate profile, and resume.
 
-The application uses Google's Gemini API to generate personalized interview questions, identify skill gaps, and create a customized interview preparation roadmap.
+The application uses Google's Gemini API to generate personalized interview questions, behavioral questions, identify skill gaps, and create a customized interview preparation roadmap.
 
 ---
 

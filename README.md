@@ -224,7 +224,7 @@ Authenticated API Requests
 
 ## 💾 Database
 
-The application uses MongoDB as the database.
+The application uses MongoDB as the database server.
 
 Mongoose is used as the ODM layer for interacting with MongoDB.
 
